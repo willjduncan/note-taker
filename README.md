@@ -26,8 +26,7 @@ I WANT to be able to write and save notes
 
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
-
-<!-- Team-Profile-Generator is a program that allows the user to set up a workforce list consisting of employees, managers, engineers, and interns. The creation of the program is intended to test and improve my skills using ES6, Node, Jest, and npm, while also giving me a chance to plan and form a project using an object-oriented approach that prioritizes testing first. By the end of the challenge, I should feel more comfortable and equipped to work on back-end development in a professional setting.  -->
+Note Taker is a program that allows a user to write, keep, and delete notes. The challenge is meant to test my ability to create the backend of a website and combine it with the frontend. It will prove my full-stack coding chops while giving me a chance to better my skills at Node and Express.js and become more familiar with Insomnia for testing. 
 
 Once complete, the program should operate so that:
 
@@ -57,12 +56,12 @@ WHEN I click on the Write icon in the navigation at the top of the page
 
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
+The final product should allow a user to type notes and for the program to save them and keep them accessible and deletable. 
 
-<!-- The final product should place however many members of the workforce there are into their own individual cards with active links on a webpage. 
+After downloading the starter code, getting npm, organizing files, and adding scaffolding, remembering to include the necessary middleware, I could begin to code, beginning with the server. Once everything was prepared, I focused on routing the two html pages, index and notes. I then focused on displaying notes through the api/notes route. The POST was accomplished thanks to studying Activity 5 of the In-Class activities of Module 11, specifically how to read the data file and then append a new item to the data file without deleting what was there. I added unique ids using the UUID package through npm. 
 
-This project had to be accomplished with careful planning, first setting up the necessary scaffolding according to the Challenge guidelines, then downloading the necessary tools, including npm, inquirer, and Jest. From there, the tests had to be established for each Class, before any building of the Classes could commence. I started the classes with Employee and then moved on to the others, using Jest-Another-RPG as a blueprint for extending the "Employee" functionality to the other classes. I then set up the inquirer to ask the pertinent questions and store the items. I realized it may be easier to set up that functionality within a class, similar to how there was a Game class in Jest-Another-RPG. Therefore, I added an additional class js file to handle all of that. 
+<!-- Once all the Acceptance Criteria were fulfilled, I added the DELETE ability.  -->
 
-I took inspiration from the profile generator of Module 9 for the rest of the challenge, since that was where I had most experience writing and copying html onto a page. Using similar functions, I created the markdown, write, and copy functions, placing them in their own utils and src folders. I went ahead and also copied the CSS file provided in module 9 and added minor changes, such as background color to fit my need. I decided not to remove unapplied classes so that, in the future, should I choose to alter the CSS, it will be easier to adapt. After some tinkering, I managed to display the information properly.  -->
 
 
 
@@ -79,7 +78,7 @@ Because this project runs from the machine and not the browser, it cannot be dep
 
 Screenshots of the mockup and actual site are shown below
 
-![screenshot of Mockup](/images/screenshot-mockup.png)
+![screenshot of Mockup](/images/mockup.png)
 ![screenshot of Active Site](/images/screenshot-active.png)
 
 
@@ -96,23 +95,24 @@ A video explaining and demonstrating the app's functionality is below:
 
 ## Credits
 
-<!-- The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The license was picked from [https://choosealicense.com/](https://choosealicense.com/).The WHEN/THEN section of this README was based off the project assignment Acceptance Criteria. No TAs or classmates were used in the making of this challenge. Most influence was taken particularly from Jest-Another-RPG of Module 10 and the Portfolio Generator from Module 9. Stack Overflow, MDN Web Docs, W3, and Google were critical to my success. Node.js, Jest, and NPM's Inquirer were also used. -->
+<!-- The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The license was picked from [https://choosealicense.com/](https://choosealicense.com/).The WHEN/THEN section of this README was based off the project assignment Acceptance Criteria. No TAs or classmates were used in the making of this challenge. Most influence was taken particularly from Zookeepr of Module 11 and Activity 5 of the In-Class Assignments for Module 11. Stack Overflow, MDN Web Docs, W3, and Google were critical to my success. Node.js, Insomnia, Express.js, npm, and npm's UUID package were also used. -->
 
 
 
 ## Contributing
 
-<!-- Other items to be added can be more classes of employee, such as junior developer, salesperson, or whatever other job may be offered at the organization in question. Speaking of which, a class could be made for the organization as a whole. Addesses, resumes, salaries, PTO, age, social security number, direct deposit, and much more can be added to the input, as long as the more private information is handled with the respective care. Styling can also be improved.  -->
+Other items to be added can be more data such as documents made for listmaking, or adding more properties to the current database such as time of creation or due date. Editable notes, or drag and drop functionality would give users more interaction with the page. Just make sure to keep things organized and in their respective folders. 
 
 
 ## Tests
 
-<!-- Tests were created using Jest. Currently, there are 22 tests, and all of them pass. More tests can be added to further fill out the 4 classes currently available. To run a test, type "npm run test /CLASS/" to run the tests associated with a specific class (labeled /CLASS/ in the example). -->
+No Jest tests written were made for this challenge, but Insomnia is a critical tool in letting us test the program's GET, POST, and DELETE methods. If you want to run tests, download Insomnia or some similar program, activate the program in Terminal using "npm start", and then use the Localhost URL to try the different methods. 
+
 
 
 ## Questions
 
-<!-- My Github username is willjduncan.
+My Github username is willjduncan.
 
 
 My Github Profile can be found below:
@@ -122,10 +122,10 @@ My Github Profile can be found below:
 
 The repository to this project is below:
 
-[https://github.com/willjduncan/team-profile-generator.git](https://github.com/willjduncan/team-profile-generator.git)
+[https://github.com/willjduncan/note-taker.git](https://github.com/willjduncan/note-taker.git)
 
 
-For any additional questions, I can be reached at willdunc12@gmail.com. -->
+For any additional questions, I can be reached at willdunc12@gmail.com.
 
 
 

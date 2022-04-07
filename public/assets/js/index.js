@@ -120,6 +120,7 @@ const handleRenderSaveBtn = () => {
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
   if (window.location.pathname === '/notes') {
+  // if (window.location.pathname === '/api/notes') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
 
@@ -178,6 +179,6 @@ if (window.location.pathname === '/notes') {
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
   noteText.addEventListener('keyup', handleRenderSaveBtn);
-}
+} 
 
 getAndRenderNotes();

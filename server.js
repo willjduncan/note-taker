@@ -1,10 +1,3 @@
-// const fs = require('fs');
-// const path = require('path');
-
-//REMOVE????^^^^
-
-
-
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 //setting up express.js 
@@ -18,7 +11,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //middleware for setting up routes and organizing files
-// app.use('/api', apiRoutes);
+app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
 //Listener for starting npm

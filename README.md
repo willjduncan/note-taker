@@ -60,42 +60,41 @@ The final product should allow a user to type notes and for the program to save 
 
 After downloading the starter code, getting npm, organizing files, and adding scaffolding, remembering to include the necessary middleware, I could begin to code, beginning with the server. Once everything was prepared, I focused on routing the two html pages, index and notes. I then focused on displaying notes through the api/notes route. The POST was accomplished thanks to studying Activity 5 of the In-Class activities of Module 11, specifically how to read the data file and then append a new item to the data file without deleting what was there. I added unique ids using the UUID package through npm. 
 
-<!-- Once all the Acceptance Criteria were fulfilled, I added the DELETE ability.  -->
-
+Once all the Acceptance Criteria were fulfilled, I added the DELETE ability. While it was a little challenging, I found it similar to the POST solution, in that you have to first read the data file and then make a new array of its objects somehow. This time, I used the filter ability to search for the id.  
 
 
 
 ## Installation
 
-<!-- Links to the repository and deployed website can be found at [Questions](#questions).
+Links to the repository and deployed website can be found at [Questions](#questions).
 
-Because this project runs from the machine and not the browser, it cannot be deployed. The project is on github, however. You must first clone the repo, then run the command "npm install" on the Terminal/Command Line in order to download the dependencies. Make sure to also download inquirer, using "npm install inquirer". From there, you can fill out your team. If you want to run tests, you also have to install Jest, using "npm install jest --save-dev". -->
+While this project's repository is available on Github, the deployed site is found on herouku. If you download or clone the code, make sure to install npm.
+
 
 
 ## Usage
 
-<!-- Once the project is cloned and the dependencies downloaded, type "node index" to run the program. The program will provide you with multiple prompts to fill out. When you're done, your new webpage should appear in the dist/ folder for you to open up onto your preferred browser. 
+Once the project is cloned and the dependencies downloaded, type "npm start" to run the program. Go to localhost:3001/ or my deployed heroku site at [https://willjduncan-note-taker.herokuapp.com/](https://willjduncan-note-taker.herokuapp.com/)
 
 Screenshots of the mockup and actual site are shown below
 
-![screenshot of Mockup](/images/mockup.png)
-![screenshot of Active Site](/images/screenshot-active.png)
+![screenshot of Mockup](/public/assets//images/mockup.png)
+![screenshot of Active Site](/public/assets//images/screenshot-active.png)
 
 
-Screenshots of the WorkForce Class, Engineer class, and page-template is below: 
+Screenshots of the server.js file and the noteRoutes.js file are below: 
 
-![screenshot of WorkForce](/images/screenshot-workforce.png)
-![screenshot of Engineer](/images/screenshot-engineer.png)
-![screenshot of page-template](/images/screenshot-page-template.png)
+![screenshot of Server](/public/assets/images/screenshot-server.png)
+![screenshot of noteRoutes](/public/assets//images/screenshot-noteRoutes.png)
 
-A video explaining and demonstrating the app's functionality is below:
+A screenshot of Insomnia at work is also included, showing that the API fetch of note data works
 
-[https://drive.google.com/file/d/1fpUPzZ8xsgI8BrnhTcdO_vuMhYNBl-P1/view](https://drive.google.com/file/d/1fpUPzZ8xsgI8BrnhTcdO_vuMhYNBl-P1/view) -->
+![screenshot of page-template](/public/assets//images/screenshot-insomnia.png)
 
 
 ## Credits
 
-<!-- The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The license was picked from [https://choosealicense.com/](https://choosealicense.com/).The WHEN/THEN section of this README was based off the project assignment Acceptance Criteria. No TAs or classmates were used in the making of this challenge. Most influence was taken particularly from Zookeepr of Module 11 and Activity 5 of the In-Class Assignments for Module 11. Stack Overflow, MDN Web Docs, W3, and Google were critical to my success. Node.js, Insomnia, Express.js, npm, and npm's UUID package were also used. -->
+The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The license was picked from [https://choosealicense.com/](https://choosealicense.com/).The WHEN/THEN section of this README was based off the project assignment Acceptance Criteria. No TAs or classmates were used in the making of this challenge. Most influence was taken particularly from Zookeepr of Module 11 and Activity 5 of the In-Class Assignments for Module 11. Stack Overflow, MDN Web Docs, W3, and Google were critical to my success. Node.js, Insomnia, Express.js, npm, and npm's UUID package were also used.
 
 
 
@@ -123,6 +122,11 @@ My Github Profile can be found below:
 The repository to this project is below:
 
 [https://github.com/willjduncan/note-taker.git](https://github.com/willjduncan/note-taker.git)
+
+
+The Heroku-deployed site is below:
+
+[https://willjduncan-note-taker.herokuapp.com/](https://willjduncan-note-taker.herokuapp.com/)
 
 
 For any additional questions, I can be reached at willdunc12@gmail.com.

@@ -2,10 +2,7 @@ const fs = require('fs');
 const router = require('express').Router();
 //As suggested by npm for accessing random ID
 const { v4: uuidv4 } = require('uuid');
-
-// const { filterByQuery, findById, createNewAnimal, validateAnimal } = require('../../lib/animals');
 const { notes } = require('../../db/db.json');
-
 
 // GET /api/notes should read the db.json file and return all saved notes as JSON.
 router.get('/notes', (req, res) => {
@@ -81,7 +78,6 @@ router.post('/notes', (req, res) => {
 // In order to delete a note, you'll need to read all notes from the db.json file, 
 // remove the note with the given id property, and then rewrite the notes to the db.json file.
 router.delete('/notes/:id', (req, res) => {
-    // console.log(req.params.id);
         //get the notes from db.json
         fs.readFile(`./db/db.json`, (err, data) => {
         if(err) {
@@ -108,7 +104,6 @@ router.delete('/notes/:id', (req, res) => {
                     status: 'sucess',
                 };
                 console.log(response);
-                // res.send(response);
                 }
             })
         }
